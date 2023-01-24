@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import axios from 'axios'
-import Navbar from './Components/Navbar'
+import Navbar from './components/Navbar'
 import { NumericFormat } from 'react-number-format';
 import './App.css'
 
