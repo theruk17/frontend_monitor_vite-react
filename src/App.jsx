@@ -27,7 +27,7 @@ function App() {
         <div className="mx-auto max-w-full py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
           <div className="container mx-auto bg-white shadow rounded-lg">
             <div className="px-4 py-5 sm:px-6">
-              <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 xl:gap-x-6">
+              <div className="grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 xl:gap-x-6">
                 {products.map((product) => (
                   <a key={product.mnt_id} href={product.mnt_href} target="_blank" className="group">
                     <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg xl:aspect-w-7 xl:aspect-h-8">
