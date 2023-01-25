@@ -35,17 +35,13 @@ function App() {
                       <p className="text-sm text-center text-black">{product.mnt_model}</p>
                       <p className="text-sm text-center text-red-600">{product.mnt_size}" {product.mnt_panel} {product.mnt_refresh_rate}Hz</p>
                       <p className="text-sm text-center text-black">{product.mnt_resolution}</p>
-                      <div className="border-t border-gray-200">
                         <img
                           src={product.mnt_img}
                           alt={product.mnt_model}
                           className="h-full w-full object-cover object-center group-hover:opacity-75"
                         />
-                      </div>
-                      <div className="border-t border-gray-200">
                         <p className="leading-normal text-sm text-center font-light text-black">ราคาเพียง</p>
                         <p className="leading-none text-2xl text-center font-bold text-red-600"><NumericFormat value={product.mnt_price_srp} thousandSeparator="," displayType="text" />.-</p>
-                      </div>
                     </div>
                   </a>
                 ))}
