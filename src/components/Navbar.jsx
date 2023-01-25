@@ -186,6 +186,7 @@ export default function Navbar() {
           )}
         </Disclosure>
       </div>
+   
     </>
   )
 }
