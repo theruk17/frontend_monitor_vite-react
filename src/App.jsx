@@ -13,7 +13,11 @@ function App() {
   }, [])
 
   const fetchProducts = async () => {
-    await axios.get(`https://drab-jade-haddock-toga.cyclic.app/monitor`).then(({ data }) => {
+    await axios.get(`https://drab-jade-haddock-toga.cyclic.app/monitor`, {
+      headers: {
+        'Authorization': `Basic ${Buffer.from('somruk:ruk0891209').toString('base64')}`
+      }
+    }).then(({ data }) => {
       setProducts(data);
     })
   }
