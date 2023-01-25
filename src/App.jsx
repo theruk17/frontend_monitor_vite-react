@@ -25,7 +25,7 @@ function App() {
 
       <div className="bg-gradient-to-b from-rose-800 to-slate-900">
         <div className="mx-auto max-w-full py-4 px-4 sm:py-4 sm:px-6 lg:max-w-7xl lg:px-8">
-        <h1 className="text-2xl text-center pb-1 font-bold text-white">ซื้อเครื่องคอมพิวเตอร์พร้อมจอได้ราคาพิเศษ</h1>
+        <h1 className="text-lg sm:text-3xl text-center pb-1 font-bold text-white">ซื้อเครื่องคอมพิวเตอร์พร้อมจอได้ราคาพิเศษ</h1>
           <div className="container mx-auto bg-white shadow rounded-lg">
             <div className="px-4 py-5 sm:px-6">
               <div className="grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 xl:gap-x-6">
