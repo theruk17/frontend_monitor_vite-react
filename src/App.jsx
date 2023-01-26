@@ -11,11 +11,14 @@ const API_URL = 'https://drab-jade-haddock-toga.cyclic.app/monitor'
 function App() {
   const [data, setData] = useState([]);
   const [groups, setGroups] = useState({});
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    setLoading(true)
     axios.get(API_URL)
       .then(response => {
-        setData(response.data);
+        setData(response.data)
+        setLoading(false)
 
         // group the data by a certain property
         const groups = response.data.reduce((acc, item) => {
@@ -38,11 +41,15 @@ function App() {
 
     <div>
       <Navbar />
-
+      {loading ? (
+        <div className="animate-pulse w-6 h-6 mx-auto">LOADING</div>
+        ) : (
       <div className="bg-gradient-to-b from-rose-800 to-slate-900">
         <div className="mx-auto max-w-full py-4 px-4 sm:py-4 sm:px-6 lg:max-w-7xl lg:px-8">
         <h1 className="text-lg sm:text-3xl text-center pb-1 font-bold text-white">ซื้อเครื่องคอมพิวเตอร์พร้อมจอได้ราคาพิเศษ</h1>
+        
         {Object.keys(groups).map(group => (
+          
           <div key={group} className="container mx-auto bg-white shadow rounded-lg mb-2">
             <div className="px-4 py-5 sm:px-6">
               <div className="h-10 w-full">
@@ -77,8 +84,10 @@ function App() {
             </div>
           </div>
           ))}
+      
         </div>
       </div>
+      )}
     </div>
   )
 }
