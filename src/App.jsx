@@ -52,7 +52,7 @@ function App() {
           
           <div key={group} className="container mx-auto bg-white shadow rounded-lg mb-2">
             <div className="px-4 py-5 sm:px-6">
-              <div className="h-10 w-full">
+              <div className="h-10 w-full mb-2">
                 <img className="static h-full" src={pic} alt="" />
                 <div className='bg-gradient-to-r from-custom_red1 to-custom_red2 h-1'></div>
                 <div className='relative bottom-9 left-9 text-white font-bold text-2xl'>{group}</div>

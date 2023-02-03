@@ -5,8 +5,8 @@ import ihcLogo from '../assets/logo_ihc.svg'
 
 
 const navigation = [
-  { name: 'Home', href: 'https://monitor-admin.vercel.app', current: true },
-  // { name: 'Brand', href: '#', current: false },
+  { name: 'MONITOR', href: 'https://monitor-admin.vercel.app', current: true },
+  //{ name: 'CASE', href: 'https://case-admin.vercel.app', current: false },
 
 ]
 
