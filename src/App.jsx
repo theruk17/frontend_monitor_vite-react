@@ -65,7 +65,7 @@ function App() {
                       <div>
                       <p className="whitespace-nowrap text-lg sm:text-xl font-bold text-center text-black">{item.mnt_brand}</p>
                       <p className="text-xs text-center text-black">{item.mnt_model}</p>
-                      <p className="text-sm text-center text-red-600 font-bold">{item.mnt_size}" {item.mnt_panel} {item.mnt_refresh_rate}</p>
+                      <p className="text-sm text-center text-red-600 font-bold">{item.mnt_size} {item.mnt_panel} {item.mnt_refresh_rate}</p>
                       <p className="text-sm text-center text-black font-bold">{item.mnt_resolution}</p>
                       </div>
                       <div>
