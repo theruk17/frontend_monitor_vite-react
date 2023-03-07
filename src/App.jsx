@@ -75,11 +75,10 @@ function App() {
                           className=" aspect-square relative h-full w-full object-cover object-center group-hover:opacity-75"
                         />
                         </div>
-                        <div>
+                        <div className='h-16 grid grid-cols-1 content-end'>
+                        {item.mnt_price_w_com === null || item.mnt_price_w_com === item.mnt_price_srp ? <><div><p className="leading-normal text-sm text-center font-light text-black">ราคา</p></div><div><p className="leading-none text-2xl text-center font-bold text-red-600"><NumericFormat value={item.mnt_price_w_com} thousandSeparator="," displayType="text" />.-</p></div></> : <><div><p className="text-center text-xs text-gray-600">ราคาปกติ <NumericFormat value={item.mnt_price_srp} thousandSeparator="," displayType="text" />.-</p></div><div><p className="leading-normal text-sm text-center font-light text-black">ราคาพร้อมเครื่อง</p></div><div><p className="leading-none text-2xl text-center font-bold text-red-600"><NumericFormat value={item.mnt_price_w_com} thousandSeparator="," displayType="text" />.-</p></div></>}
                         
-                        <p className="text-center text-xs text-gray-600">ราคาปกติ <NumericFormat value={item.mnt_price_srp} thousandSeparator="," displayType="text" />.-</p>
-                        <p className="leading-normal text-sm text-center font-light text-black">ราคาพร้อมเครื่อง</p>
-                        <p className="leading-none text-2xl text-center font-bold text-red-600"><NumericFormat value={item.mnt_price_w_com} thousandSeparator="," displayType="text" />.-</p>
+                        
                     </div>
                     </div>
                   </a>
